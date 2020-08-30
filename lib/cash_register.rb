@@ -11,7 +11,7 @@ class CashRegister
     quantity.times do
       items << title
     end
-    @last_total = @total
+    self.last_transaction = price * quantity
     self.total += price * quantity
   end
 
